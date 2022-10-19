@@ -1,5 +1,6 @@
 package com.example.jetbizcard
 
+import android.graphics.drawable.shapes.OvalShape
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -10,10 +11,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.MaterialTheme.colors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -62,17 +65,28 @@ fun CreateBizCard() {
                 Text(
                     text = "Lynne M.",
                     color = Color.Gray,
-                    modifier = Modifier.padding(top = 10.dp, bottom = 5.dp),
+                    modifier = Modifier.padding(top = 30.dp, bottom = 10.dp),
                     style = MaterialTheme.typography.h1
                 )
                 Text(
                     text = "Android Engineer",
-                    style = MaterialTheme.typography.body1
+                    style = MaterialTheme.typography.body1,
+                    modifier = Modifier.padding(bottom = 5.dp)
                 )
                 Text(
                     text = "@LynneMunini",
-                    style = MaterialTheme.typography.body1
+                    style = MaterialTheme.typography.body1,
+                    modifier = Modifier.padding(bottom = 5.dp)
                 )
+                Button(
+                    onClick = { /*TODO*/ },
+                    modifier = Modifier.width(120.dp).height(80.dp).padding(top = 40.dp),
+                    shape = RoundedCornerShape(corner = CornerSize(10.dp)),
+                    border = BorderStroke(0.5.dp, color = Color.LightGray),
+                    colors = ButtonDefaults.textButtonColors(backgroundColor = Color.Yellow, contentColor = Color.Black)
+                    ) {
+                    Text("Contact Me")
+                }
             }
 
         }
