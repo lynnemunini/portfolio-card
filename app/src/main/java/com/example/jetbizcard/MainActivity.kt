@@ -58,7 +58,7 @@ fun CreateBizCard() {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 CreateImageProfile()
-                Divider(color = Color.Gray, thickness = 0.5.dp)
+                Divider(color = Color.Gray, thickness = 0.2.dp)
                 Text(
                     text = "Lynne M.",
                     color = Color.Gray,

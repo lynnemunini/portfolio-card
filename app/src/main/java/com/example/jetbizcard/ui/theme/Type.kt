@@ -16,8 +16,8 @@ val QuickSand = FontFamily(
 val Typography = Typography(
     body1 = TextStyle(
         fontFamily = QuickSand,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        fontWeight = FontWeight.W600,
+        fontSize = 14.sp
     ),
     h1 = TextStyle(
         fontFamily = QuickSand,
