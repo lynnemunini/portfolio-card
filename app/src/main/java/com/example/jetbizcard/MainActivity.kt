@@ -22,6 +22,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetbizcard.ui.theme.JetBiZCardTheme
@@ -158,9 +159,12 @@ fun Portfolio(data: List<String>) {
                 Row(modifier = Modifier
                     .padding(8.dp)
                     .background(MaterialTheme.colors.surface)
-                    .padding(16.dp)){
+                    .padding(7.dp)){
                     CreateImageProfile(modifier = Modifier.size(100.dp))
-                    Text(item)
+                    Column(modifier = Modifier.padding(7.dp).align(Alignment.CenterVertically)) {
+                        Text(item)
+                        Text("Lynne Munini", fontWeight = FontWeight.Medium, color = Color.DarkGray)
+                    }
                 }
                 }
         }
