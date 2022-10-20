@@ -155,7 +155,8 @@ fun Portfolio(data: List<String>) {
             Card(modifier = Modifier
                 .padding(13.dp)
                 .fillMaxWidth(),
-            shape = RectangleShape){
+            shape = RectangleShape,
+            elevation = 4.dp){
                 Row(modifier = Modifier
                     .padding(8.dp)
                     .background(MaterialTheme.colors.surface)
@@ -163,7 +164,8 @@ fun Portfolio(data: List<String>) {
                     CreateImageProfile(modifier = Modifier.size(100.dp))
                     Column(modifier = Modifier.padding(7.dp).align(Alignment.CenterVertically)) {
                         Text(item)
-                        Text("Lynne Munini", fontWeight = FontWeight.Medium, color = Color.DarkGray)
+                        Text("Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,\n" +
+                                "molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum\n", fontWeight = FontWeight.Medium, color = Color.DarkGray)
                     }
                 }
                 }
