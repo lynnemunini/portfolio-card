@@ -26,6 +26,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetbizcard.ui.theme.JetBiZCardTheme
+import com.example.jetbizcard.ui.theme.Purple200
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,7 +74,7 @@ fun CreateBizCard() {
                 CreateInfo()
                 Button(
                     onClick = {
-                        buttonClickedState.value = !buttonClickedState.value
+                        buttonClickedState.value = buttonClickedState.value
 
                     },
                     modifier = Modifier
@@ -83,7 +84,7 @@ fun CreateBizCard() {
                     shape = RoundedCornerShape(corner = CornerSize(10.dp)),
                     border = BorderStroke(0.5.dp, color = Color.LightGray),
                     colors = ButtonDefaults.textButtonColors(
-                        backgroundColor = Color.DarkGray,
+                        backgroundColor = Color(0xFF0277BD),
                         contentColor = Color.White
                     )
                 ) {
@@ -107,7 +108,7 @@ private fun CreateInfo() {
     Column {
         Text(
             text = "Lynne M.",
-            color = Color.DarkGray,
+            color = Color(0xFF0277BD),
             modifier = Modifier.padding(top = 30.dp, bottom = 10.dp),
             style = MaterialTheme.typography.h1
         )
