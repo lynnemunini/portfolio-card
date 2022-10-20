@@ -160,6 +160,7 @@ fun Portfolio(data: List<String>) {
                     .background(MaterialTheme.colors.surface)
                     .padding(16.dp)){
                     CreateImageProfile(modifier = Modifier.size(100.dp))
+                    Text(item)
                 }
                 }
         }
