@@ -74,7 +74,7 @@ fun CreateBizCard() {
                 CreateInfo()
                 Button(
                     onClick = {
-                        buttonClickedState.value = buttonClickedState.value
+                        buttonClickedState.value = !buttonClickedState.value
 
                     },
                     modifier = Modifier
@@ -90,7 +90,7 @@ fun CreateBizCard() {
                 ) {
                     Text("Portfolio")
                 }
-                if (!buttonClickedState.value) {
+                if (buttonClickedState.value) {
                     com.example.jetbizcard.Content()
                 } else {
                     Box() {
