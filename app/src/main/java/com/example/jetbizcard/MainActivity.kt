@@ -84,7 +84,7 @@ fun CreateBizCard() {
                     shape = RoundedCornerShape(corner = CornerSize(10.dp)),
                     border = BorderStroke(0.5.dp, color = Color.LightGray),
                     colors = ButtonDefaults.textButtonColors(
-                        backgroundColor = Color(0xFF0277BD),
+                        backgroundColor = Color(0xFF006064),
                         contentColor = Color.White
                     )
                 ) {
@@ -108,7 +108,7 @@ private fun CreateInfo() {
     Column {
         Text(
             text = "Lynne M.",
-            color = Color(0xFF0277BD),
+            color = Color(0xFF006064),
             modifier = Modifier.padding(top = 30.dp, bottom = 10.dp),
             style = MaterialTheme.typography.h1
         )
