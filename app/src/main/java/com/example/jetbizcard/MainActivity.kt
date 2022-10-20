@@ -64,7 +64,7 @@ fun CreateBizCard() {
                 Divider(color = Color.Gray, thickness = 0.2.dp)
                 Text(
                     text = "Lynne M.",
-                    color = Color.Gray,
+                    color = Color.DarkGray,
                     modifier = Modifier.padding(top = 30.dp, bottom = 10.dp),
                     style = MaterialTheme.typography.h1
                 )
@@ -83,7 +83,7 @@ fun CreateBizCard() {
                     modifier = Modifier.width(120.dp).height(80.dp).padding(top = 40.dp),
                     shape = RoundedCornerShape(corner = CornerSize(10.dp)),
                     border = BorderStroke(0.5.dp, color = Color.LightGray),
-                    colors = ButtonDefaults.textButtonColors(backgroundColor = Color.Yellow, contentColor = Color.Black)
+                    colors = ButtonDefaults.textButtonColors(backgroundColor = Color.DarkGray, contentColor = Color.White)
                     ) {
                     Text("Contact Me")
                 }
